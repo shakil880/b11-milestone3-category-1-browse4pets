@@ -1,10 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
-
+/* common css  */
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  background-color: red;
+  
 }
+
+.font-sora {
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 500; */
+  font-style: normal;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.primary-btn  {
+  background-color: rgba(255, 220, 38, 1);
+  border: 0;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 5px;
+  font-weight: 550;
+}
+
+.secondary-btn {
+  border: 0;
+  width: 10rem;
+  height: 4rem;
+  background-color: rgba(255, 249, 244, 1);
+  border: 1px solid rgba(255, 220, 38, 1);
+  border-radius: 5px;
+  font-weight: 550;
+}
+
+.section-head {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: green;
+}
+
+.text-gray {
+  color: rgba(17, 17, 17, 1);
+}
+
+.flex-row {
+  display: flex
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column
+}
+
+
+/* header */
+
+/* navbar  */
+
+header {
+  font-size: 2rem;
+  
+}
+
+.logo {
+  align-items: center;
+}
+
+.span-1 {
+  color: yellow;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  
+
+}
+
+.navbar-whole {
+  background-color: rgba(255, 249, 244, 1);
+}
+
+.nav-link {
+  margin: 0 10px;
+}
+
+.nav-reg {
+  gap: 10px;
+  align-items: center;
+}
+
+
+/* heder banner */
+
+.banner {
+  min-height: 100vh;
+  background-image: url(/assets/cat-big.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+}
+
+.banner-desc {
+  margin-top: 10px;
+  /* background-color: red; */
+  width: 40%;
+}
+
+
+/* categories */
+
+#categories {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+
+.category-cards {
+  justify-content: space-between;
+  /* gap: 10rem; */
+}
+
+.category-card {
+  width: 10vw;
+  height: 25vh;
+  
+  text-align: center;
+  
+  
+  background-color: #F9DF8A;
+
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.category-card img {
+  background-color: white;
+  border-radius: 10px;
+  /* width: 20px; */
+  
+  
+}
+
+.cat-img {
+  width: auto;
+}
+
+
+
