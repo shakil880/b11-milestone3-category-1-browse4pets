@@ -168,3 +168,36 @@ header {
 
 
 
+
+
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .nav-reg {
+    display: none;    
+  }
+
+  .banner-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .category-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .category-card {
+    width: 100%;
+  }
+
+}
