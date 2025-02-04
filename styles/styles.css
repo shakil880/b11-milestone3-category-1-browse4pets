@@ -114,7 +114,7 @@ header {
 
 .banner {
   min-height: 100vh;
-  background-image: url(./assets/cat-big.png);
+  background-image: url(/assets/cat-big.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom left;
@@ -124,6 +124,10 @@ header {
   margin-top: 10px;
   /* background-color: red; */
   width: 40%;
+}
+
+.banner-desc p {
+  margin: 25px 0;
 }
 
 
@@ -166,11 +170,155 @@ header {
   width: auto;
 }
 
+/* trending pet products */
+
+#trending {
+  background-color: rgba(255, 249, 244, 1);
+
+}
+
+.trending-products {
+  display: grid;
+  grid-template-columns: 33% 1fr;
+  gap: 40px;
+  
+}
+
+.left-section {
+  background-image: url(/assets/cute-pet-small.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  background-color: #F9DF8A;
+
+  /* background-size: cover; */
+
+  width: 100%; /* or any desired width */
+  aspect-ratio: 1 / 1;
+
+
+  border-radius: 5px;
+
+  justify-content: center;
+
+}
+
+.left-section {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.left-section h1 {
+  font-size: 3rem;
+
+}
+
+.left-section p {
+  font-size: 1.5rem;
+  margin: 25px 0;
+  width: 80%;
+}
+
+.left-section button {
+  width: 25%;
+  height: 8%;
+  border: none;
+  border-radius: 5px;
+}
+
+.right-section {
+  /* background-color: red; */
+  border-radius: 20px;
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+
+.right-card-img {
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.right-card {
+  
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  /* align-items: center; */
+
+  padding: 20px;
+  gap: 20px;
+
+  background-color: white;
+  border-radius: 5px;
+
+
+  box-sizing: border-box;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  
+}
+
+.right-card-img {
+  /* width: 30%; */
+  background-color: rgba(255, 249, 244, 1);
+  text-align: center;
+}
+
+.star-rating {
+  font-size: 1.5rem;
+}
+
+/* width="2rem" height="2rem" */
+
+
+.star-rating > span > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.star-rating > span {
+  margin-right: 0.5rem;
+}
+  
+.right-card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: left;
+
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.right-desc-card {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-size: 1rem;
+}
+
+
 
 
 
 
 @media (max-width: 576px) {
+  html {
+    font-size: 50%;
+  }
+
   .container {
     width: 95%;
   }
@@ -189,6 +337,11 @@ header {
     width: 100%;
   }
 
+  /* .banner-desc > p {
+    margin: 100px;
+    background-color: red;
+  } */
+
 
   .category-cards {
     display: grid;
@@ -198,6 +351,19 @@ header {
 
   .category-card {
     width: 100%;
+  }
+
+
+  .trending-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .star-rating {
+    display: flex;
+  }
+
+  .right-section {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
