@@ -114,7 +114,7 @@ header {
 
 .banner {
   min-height: 100vh;
-  background-image: url(/assets/cat-big.png);
+  background-image: url(./assets/cat-big.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom left;
